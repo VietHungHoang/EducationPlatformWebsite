@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: #ffb900;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -92,4 +96,85 @@ header .sign-up-btn {
 
 header .action {
     margin-left: 49px;
+}
+
+/* <==================== Hero ====================> */
+.hero {
+    padding-top: 56px;
+    background-color: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.hero .media-block .img {
+    width: 470px;
+    height: 685px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Trong tương lai có thể mục này sẽ được mở rộng thêm, vì vậy cố định theo bottom và right */
+.hero-summary {
+    position: absolute;
+    bottom: 48px;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 270px;
+    padding: 24px 28px;
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+}
+
+.hero-summary .item + .item {
+    margin-top: 18px;
+}
+
+.hero-summary .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #fff9e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-summary .item:nth-of-type(2) .icon {
+    background: #fcefff;
+}
+
+.hero-summary .item:nth-of-type(3) .icon {
+    background: #ebeaff;
+}
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero .content-block {
+    width: 52%;
+}
+
+.hero-summary .label {
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #5f5b53;
+}
+
+.hero-summary .title {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #171100;
 }
